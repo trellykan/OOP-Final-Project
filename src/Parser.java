@@ -18,8 +18,8 @@ public class Parser {
 			reader = new BufferedReader(new FileReader(filename));
 			while ((line = reader.readLine()) != null) {
 				String [] words = line.toLowerCase()
-								.replaceAll("[^a-zA-Z ]", "") //Fix regex to take in single quote
-								.trim().split(" ");
+							.replaceAll("[^a-zA-Z ]", "") //Fix regex to take in single quote
+							.trim().split(" ");
 				uniqueWords.addAll(new HashSet<>(Arrays.asList(words)));
 			}
 		} catch (IOException e) {
