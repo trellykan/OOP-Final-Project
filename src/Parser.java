@@ -20,7 +20,7 @@ public class Parser {
 				String [] words = line.toLowerCase()
 							.replaceAll("[^a-zA-Z ]", "") //Fix regex to take in single quote
 							.trim().split(" ");
-				uniqueWords.addAll(new HashSet<>(Arrays.asList(words)));
+				uniqueWords.addAll(Arrays.asList(words));
 			}
 		} catch (IOException e) {
 			System.out.println("File Not Found!");

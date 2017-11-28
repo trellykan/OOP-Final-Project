@@ -1,9 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.Set;
-
 import javax.xml.parsers.ParserConfigurationException;
-
 import org.xml.sax.SAXException;
 
 public class Main {
